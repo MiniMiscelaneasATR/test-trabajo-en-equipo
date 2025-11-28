@@ -2,6 +2,6 @@
 Primer test de trabajo colaborativo en GitHub.
 
 Felipe - Index //
-. - Quienes Somos //
-. - Servicios //
+Isabel - Quienes Somos //
+Alejandra - Servicios //
 Katherine G - Contacto
