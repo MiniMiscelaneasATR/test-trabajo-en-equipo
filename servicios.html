@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galletas Sin Gluten - Servicio para Celíacos</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #8B4513 0%, #D2691E 100%);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        
+        nav {
+            background-color: #333;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1.5rem;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: #D2691E;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .intro {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding: 2rem;
+            background-color: #fff3e0;
+            border-radius: 8px;
+        }
+        
+        .intro h2 {
+            color: #8B4513;
+            margin-bottom: 1rem;
+        }
+        
+        .productos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .producto {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .producto:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+        
+        .producto-imagen {
+            height: 200px;
+            background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+        }
+        
+        .producto-info {
+            padding: 1.5rem;
+        }
+        
+        .producto-info h3 {
+            color: #8B4513;
+            margin-bottom: 0.5rem;
+        }
+        
+        .precio {
+            font-size: 1.5rem;
+            color: #D2691E;
+            font-weight: bold;
+            margin: 1rem 0;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: #8B4513;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        
+        .btn:hover {
+            background-color: #D2691E;
+        }
+        
+        .contacto {
+            background-color: #fff3e0;
+            padding: 2rem;
+            border-radius: 8px;
+            text-align: center;
+            margin: 3rem 0;
+        }
+        
+        .contacto h2 {
+            color: #8B4513;
+            margin-bottom: 1rem;
+        }
+        
+        .contacto p {
+            margin: 0.5rem 0;
+            font-size: 1.1rem;
+        }
+        
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+        
+        footer p {
+            margin: 0.5rem 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🍪 Galletas Deliciosas</h1>
+        <p>Las mejores galletas artesanales para tu paladar</p>
+    </header>
+    
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#productos">Productos</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+    
+    <div class="container">
+        <section id="inicio" class="intro">
+            <h2>Bienvenido a Galletas Deliciosas</h2>
+            <p>Somos un servicio especializado en la elaboración de galletas artesanales con ingredientes de alta calidad. Cada galleta es hecha con amor y dedicación para ofrecerte el mejor sabor.</p>
+        </section>
+        
+        <section id="productos">
+            <h2 style="text-align: center; color: #8B4513; margin-bottom: 2rem;">Nuestros Productos</h2>
+            
+            <div class="productos">
+                <div class="producto">
+                    <div class="producto-imagen">🍪</div>
+                    <div class="producto-info">
+                        <h3>Galletas de Chocolate</h3>
+                        <p>Deliciosas galletas con chips de chocolate belga. Perfectas para los amantes del chocolate.</p>
+                        <div class="precio">$5.99</div>
+                        <button class="btn">Agregar al carrito</button>
+                    </div>
+                </div>
+                
+                <div class="producto">
+                    <div class="producto-imagen">🍪</div>
+                    <div class="producto-info">
+                        <h3>Galletas de Avena</h3>
+                        <p>Saludables y deliciosas galletas de avena con pasas. Ideales para el desayuno.</p>
+                        <div class="precio">$4.99</div>
+                        <button class="btn">Agregar al carrito</button>
+                    </div>
+                </div>
+                
+                <div class="producto">
+                    <div class="producto-imagen">🍪</div>
+                    <div class="producto-info">
+                        <h3>Galletas de Almendras</h3>
+                        <p>Crujientes galletas con almendras tostadas. Un sabor clásico y elegante.</p>
+                        <div class="precio">$6.99</div>
+                        <button class="btn">Agregar al carrito</button>
+                    </div>
+                </div>
+                
+                <div class="producto">
+                    <div class="producto-imagen">🍪</div>
+                    <div class="producto-info">
+                        <h3>Galletas de Vainilla</h3>
+                        <p>Suaves galletas de vainilla premium. El sabor tradicional que todos amamos.</p>
+                        <div class="precio">$4.49</div>
+                        <button class="btn">Agregar al carrito</button>
+                    </div>
+                </div>
+                
+                <div class="producto">
+                    <div class="producto-imagen">🍪</div>
+                    <div class="producto-info">
+                        <h3>Galletas sin Gluten</h3>
+                        <p>Deliciosas galletas aptas para celíacos. Sin sacrificar el sabor.</p>
+                        <div class="precio">$7.99</div>
+                        <button class="btn">Agregar al carrito</button>
+                    </div>
+                </div>
+                
+                <div class="producto">
+                    <div class="producto-imagen">🍪</div>
+                    <div class="producto-info">
+                        <h3>Galletas de Canela</h3>
+                        <p>Aromáticas galletas con canela y azúcar. Cálidas y reconfortantes.</p>
+                        <div class="precio">$5.49</div>
+                        <button class="btn">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contacto" class="contacto">
+            <h2>Contacto</h2>
+            <p>📧 Email: info@galletasdeliciosas.com</p>
+            <p>📞 Teléfono: +34 912 345 678</p>
+            <p>📍 Dirección: Calle Principal 123, Madrid, España</p>
+            <p style="margin-top: 1.5rem;">¡Síguenos en redes sociales!</p>
+            <p>Facebook | Instagram | Twitter</p>
+        </section>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 Galletas Deliciosas. Todos los derechos reservados.</p>
+        <p>Hecho con 💕 para los amantes de las galletas</p>
+    </footer>
+</body>
+</html>
